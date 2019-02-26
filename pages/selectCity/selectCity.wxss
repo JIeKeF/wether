@@ -1,0 +1,59 @@
+/* pages/selectCity/selectCity.wxss */
+.main{
+  width: 100%;
+  background: #fff;
+}
+.search{
+  padding-left: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+  display: inline-block;
+}
+.input{
+  background: #f8f8f8;
+  border-radius: 30rpx;
+  padding-left: 70rpx;
+  height: 60rpx;
+  width: 400rpx;
+  font-size: 30rpx;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  z-index: 100;
+  top: 5rpx;
+  left: 30rpx;
+}
+.icon image{
+  width: 100%;
+  height: 100%;
+}
+.cancel{
+  vertical-align: top;
+  margin-left: 150rpx;
+  display: inline-block;
+  font-size: 30rpx;
+  margin-top: 25rpx;
+}
+.city{
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+}
+.buttonList{
+  font-size: 10rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+.btn{
+  width: 200rpx;
+  display: inline-block;
+  font-size: 25rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background: #f8f8f8;
+  text-align: center;
+  line-height: 60rpx;
+  margin-right: 30rpx;
+  margin-bottom: 20rpx;
+}

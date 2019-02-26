@@ -1,0 +1,253 @@
+/**index.wxss**/
+
+.container {
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+}
+
+.background image {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.position {
+  position: absolute;
+  width:100%;
+  z-index: 100;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  /* background: red */
+}
+.addCIty{
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+.addCIty .text{
+  margin-left: 20rpx
+}
+.main{
+  margin-top: 120rpx
+}
+.main .mainTop{
+  position: relative;
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 20rpx;
+  margin-bottom: 20rpx;
+  background: linear-gradient(to left,rgba(255,255,255,0.1),rgba(255,255,255,1),rgba(255,255,255,0.1));
+}
+.template{
+  width: 100%;
+  height:100rpx;
+}
+.template .left{
+  float: left;
+  min-width:150rpx;
+  height:100rpx;
+  background: gold;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}
+.template .right{
+  float: right;
+  background: rgba(0, 0, 0 ,0.5);
+  font-size: 25rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #fff;
+  min-width: 180rpx;
+  text-align: right;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  margin-top: 30rpx;
+}
+.dergee{
+  width: 100%;
+  height: 400rpx;
+  margin-top: 20rpx;
+  text-align: center;
+  color: #fff;
+}
+.dergee .dergeeNumber{
+  font-size: 80rpx;
+}
+.dergee .dergeeText{
+  padding-right: 30rpx;
+}
+.dergee .detail{
+  font-size: 25rpx;
+  margin-top: 10rpx;
+  padding-right: 25rpx;
+}
+.dergee .remind{
+  margin-top: 80rpx;
+  font-size: 30rpx;
+}
+.mainFooter{
+  width:100%;
+  background: #e7e6e6;
+}
+.time{
+  width: 100%;
+  height:150rpx;
+  background: #fff;
+  padding-top: 40rpx;
+}
+
+.today{
+  width: 45%;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  border-right: 1px solid #e7e6e6;
+  float: left;
+}
+.timec{
+  float: right;
+  padding-right: 50rpx;
+}
+.todayOne{
+  margin-bottom: 20rpx;
+}
+.timeImage{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  padding-right: 50rpx;
+}
+.timeImage image{
+  width: 100%;
+  height: 100%;
+}
+.monday{
+  width: 45%;
+  padding-left: 40rpx;
+  font-size: 30rpx;
+  float: left;
+
+}
+.scroll-view-item{
+  width: 57rpx;
+  height:200rpx;
+  display: inline-block;
+  margin-right: 30rpx;
+  vertical-align: top;
+  font-size: 20rpx;
+  text-align: center;
+  padding-top: 30rpx;
+}
+.scroll-view-item:first-child{
+  margin-left: 40rpx;
+}
+.scrollbox{
+  width: 100%; 
+  height:200rpx;
+  white-space:nowrap;
+}
+.timeTen{
+   width: 100%;
+  height:200rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.scrollIMage{
+  width: 100%;
+  height: 50rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx
+}
+.scrollIMage image{
+  width: 100%;
+  height: 100%;
+}
+/* //一周天气 */
+.oneWeek{
+  width: 100%;
+  height: 400rpx;
+  margin-top: 20rpx;
+  background: #fff;
+  overflow: hidden;
+}
+.view-item{
+  height: 400rpx;
+  width: 84rpx;
+  margin-right: 35rpx;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20rpx;
+  text-align: center;
+  padding-top: 40rpx;
+}
+.view-item:first-child{
+  margin-left: 37rpx;
+}
+.view-item-list{
+  margin-top: 20rpx;
+}
+.view-item .day{
+ margin-top: 0
+}
+.listImage{
+  width: 100%;
+  height: 50rpx;
+}
+.listImage image{
+  width: 100%;
+  height: 100%;
+}
+.color{
+  color: #a8a6a6
+}
+.distance{
+  margin-top: 40rpx;
+}
+.nineGird{
+  width: 100%;
+  margin-top: 20rpx;
+  background: #fff;
+  text-align: center;
+  
+}
+.grid{
+  height: 150rpx;
+  border-bottom: none;
+}
+.state{
+  margin-top: 50rpx;
+  text-align: center;
+  font-size: 20rpx;
+  padding-bottom: 20rpx;
+}
+.girImg{
+  width: 50rpx;
+  height: 50rpx;
+}
+.girImg image{
+  width: 100%;
+  height: 100%;
+}
+.iconHeight{
+  height: 200rpx;
+  font-size: 25rpx;
+}

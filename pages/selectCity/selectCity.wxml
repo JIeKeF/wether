@@ -1,0 +1,50 @@
+<view class="main">
+  <view class='search'>
+    <input class='input' placeholder='搜索市、区、县等' bindinput="cityInput">
+    <view class='icon'>
+      <image src='../image/search.png'></image>
+    </view>
+    </input>
+  </view>
+  <text class='cancel'>取消</text>
+  <i-divider height='15'></i-divider>
+  <view wx:if="{{showList}}">
+    <view class='city'>
+      <view>
+        <view>当前</view>
+        <view class='buttonList'>
+          <view class='btn'>{{nowcity}}</view>
+        </view>
+      </view>
+      <view>
+        <view>热门城市</view>
+        <view class='buttonList'>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+        </view>
+      </view>
+      <view>
+        <view>热门景区</view>
+        <view class='buttonList'>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+          <view class='btn'>100</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view>
+    <text wx:if="{{province!=city}}">{{province}}</text>
+    <text>{{city}}</text>
+  </view>
+</view>

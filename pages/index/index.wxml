@@ -1,0 +1,162 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="background">
+    <image src='../image/green.jpg'>
+
+    </image>
+  </view>
+  <view class='position'>
+    <view class='header'>
+      <navigator url="/libs/citySelector/switchcity/switchcity">
+        <view class='addCIty'>
+          <i-icon type="add" size='18' color='#fff' />
+          <text class='text'>{{city}}</text>
+        </view>
+      </navigator>
+    </view>
+    <view class='main'>
+      <view class='mainTop'>
+        <text>温馨提示！工作之余要注意个人生活！</text>
+      </view>
+      <view class='template'>
+        <view class='left'>
+          <view>{{aqi}}</view>
+          <view>{{qlty}}</view>
+        </view>
+        <!-- <view class='right'>
+          道路结冰预警
+        </view> -->
+      </view>
+      <view class='dergee'>
+        <view class='dergeeNumber'>{{now.tmp}}°</view>
+        <view class='dergeeText'>{{now.cond_txt}}</view>
+        <view class='detail'>{{now.wind_dir}}{{now.wind_sc}}级</view>
+        <view class='remind'>天气良好，注意生活</view>
+      </view>
+      <view class='mainFooter'>
+        <view class='time'>
+          <view class='today'>
+            <view class='todayOne'>
+              <text>今天</text>
+              <text class='timec'>{{today.tmp_max}}/{{today.tmp_min}}℃</text>
+            </view>
+            <view>
+              <text wx:if="{{today.cond_txt_d!=today.cond_txt_n}}">{{today.cond_txt_d}}转{{today.cond_txt_n}}</text>
+              <text wx:if="{{today.cond_txt_d==today.cond_txt_n}}">{{today.cond_txt_n}}</text>
+              <view class='timeImage'>
+                <image src="{{todayImg}}"></image>
+              </view>
+            </view>
+          </view>
+          <view class='monday'>
+            <view class='todayOne'>
+              <text>明天</text>
+              <text class='timec'>{{tomorrow.tmp_max}}/{{tomorrow.tmp_min}}℃</text>
+            </view>
+            <view>
+              <text>{{tomorrow.cond_txt_d}}转{{tomorrow.cond_txt_n}}</text>
+              <view class='timeImage'>
+                <image src="{{tomorrowImg}}"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='timeTen'>
+          <scroll-view class='scrollbox'>
+            <view id="00" class="scroll-view-item bc_green" wx:for="{{hourly}}" wx:key="id">
+              <view>{{item.time}}</view>
+              <view class='scrollIMage'>
+                <image src="{{item.cond_code}}"></image>
+              </view>
+              <view>{{item.tmp}}℃</view>
+            </view>
+          </scroll-view>
+        </view>
+        <view class='oneWeek'>
+          <view class='view-item' wx:for="{{daily_forecast}}" wx:for-item="item" wx:key="id">
+            <view class='view-item-list day color'>{{item.date}}</view>
+            <view class='view-item-list distance'>{{item.cond_txt_n}}</view>
+            <view class='view-item-list listImage'>
+              <image src="{{item.cond_code_n}}"></image>
+            </view>
+            <view class='view-item-list'>{{item.tmp_max}}℃/{{item.tmp_min}}℃</view>
+            <view class='view-item-list color distance'>{{item.wind_dir}}</view>
+            <view class='view-item-list day color'>{{item.wind_spd}}级</view>
+          </view>
+        </view>
+        <view class='nineGird'>
+          <i-grid>
+            <i-row>
+              <i-grid-item i-class='iconHeight'>
+                <i-grid-icon>
+                  <view class='girImg'>
+                    <image src='../image/clothes.png'></image>
+                  </view>
+                  
+                </i-grid-icon>
+                <view>{{drsg.brf}}</view>
+                  <view>穿衣</view>
+              </i-grid-item>
+              <i-grid-item i-class='iconHeight'>
+                <i-grid-icon>
+                  <view class='girImg'>
+                    <image src='../image/sick.png'></image>
+                  </view>
+                  
+                </i-grid-icon>
+                <view>{{flu.brf}}</view>
+                  <view>感冒</view>
+              </i-grid-item>
+              <i-grid-item i-class='iconHeight'>
+                <i-grid-icon>
+                  <view class='girImg'>
+                    <image src='../image/movent.png'></image>
+                  </view>
+
+
+                </i-grid-icon>
+                <view>{{sport.brf}}</view>
+                <view>运动</view>
+              </i-grid-item>
+            </i-row>
+            <i-row>
+              <i-grid-item i-class='iconHeight'>
+                <i-grid-icon>
+                  <view class='girImg'>
+                    <image src='../image/play.png'></image>
+                  </view>
+
+                </i-grid-icon>
+                <view>{{trav.brf}}</view>
+                <view>旅游</view>
+              </i-grid-item>
+              <i-grid-item i-class='iconHeight'>
+                <i-grid-icon>
+                  <view class='girImg'>
+                    <image src='../image/car.png'></image>
+                  </view>
+
+                </i-grid-icon>
+                <view>{{cw.brf}}</view>
+                <view>洗车</view>
+              </i-grid-item>
+              <i-grid-item i-class='iconHeight'>
+                <i-grid-icon>
+                  <view class='girImg'>
+                    <image src='../image/comfort.png'></image>
+                  </view>
+
+                </i-grid-icon>
+                <view>{{comf.brf}}</view>
+                <view>体感</view>
+              </i-grid-item>
+
+            </i-row>
+          </i-grid>
+        </view>
+        <view class='state'>数据来源和风天气免费api</view>
+      </view>
+    </view>
+    <view class='footer'></view>
+  </view>
+</view>
